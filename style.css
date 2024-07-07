@@ -1,0 +1,164 @@
+/* style.css */
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* Keep background fixed */
+    font-family: 'Baloo Bhai', sans-serif; /* Example font */
+    color: #333; /* Default text color */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px 20px;
+    animation: fadeInUp 1s ease; /* Example animation */
+}
+
+header img {
+    width: 50px; /* Adjust logo size */
+    height: auto;
+    animation: bounceIn 1s ease; /* Example animation */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 50px; /* Reduced height */
+    align-items: center;
+    animation: slideInDown 1s ease; /* Example animation */
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #eee; /* Light gray text color */
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbar li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    border-radius: 8px;
+    text-align: left; /* Align content to the left */
+    animation: zoomIn 1s ease; /* Example animation */
+}
+
+.container h2 {
+    color: #fff; /* White text color */
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease; /* Example animation */
+}
+
+.formgroup {
+    width: 100%; /* Set width to 100% for full width */
+    margin-left: 0; /* Remove auto margin */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Spacing between items */
+}
+
+.formgroup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px); /* Adjust width for padding */
+    animation: slideInRight 1s ease; /* Example animation */
+}
+
+.submit-btn {
+    width: auto; /* Auto width based on content */
+    padding: 8px 15px; /* Adjusted padding for smaller size */
+    font-size: 14px; /* Smaller font size */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    animation: fadeIn 1s ease; /* Example animation */
+    display: block;
+    margin: auto;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    animation: fadeIn 1s ease; /* Example animation */
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Example animations (you can define your own animations) */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
